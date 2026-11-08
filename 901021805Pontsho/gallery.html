@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Discover Lesotho</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">Discover Lesotho</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services/Products</a></li>
+                <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="themeButton" class="btn btn-light ms-lg-3">Dark Mode</button>
+        </div>
+
+    </div>
+</nav>
+</header>
+
+<main>
+
+<section class="container my-5">
+
+    <h1 class="text-center mb-3">Photo Gallery</h1>
+
+    <p class="text-center mb-5">
+        Explore the beautiful scenery of the Mountain Kingdom.
+    </p>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <img src="https://seelesotho.com/wp-content/uploads/2016/07/102reflection.jpg"
+                 class="img-fluid gallery-image"
+                 alt="Beautiful mountain landscape"
+                 onclick="showImage(this.src)">
+        </div>
+
+        <div class="col-md-4">
+            <img src="https://nomadesxnomades.com/wp-content/uploads/2024/11/KM-27295_Lesothozzzz.jpg"
+                 class="img-fluid gallery-image"
+                 alt="Beautiful countryside"
+                 onclick="showImage(this.src)">
+        </div>
+
+        <div class="col-md-4">
+            <img src="https://media.istockphoto.com/id/2159757448/photo/natural-background-breathtaking-landscape-travel-adventures-mount-qiloane-thaba-bosiu.jpg?s=612x612&w=0&k=20&c=sC5JEOUxKg8_vn8MFeLWPvENdNegNa3tVpmvbHYjS0M="
+                 class="img-fluid gallery-image"
+                 alt="Mountain lake"
+                 onclick="showImage(this.src)">
+        </div>
+
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=700"
+                 class="img-fluid gallery-image"
+                 alt="Green natural environment"
+                 onclick="showImage(this.src)">
+        </div>
+
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=700"
+                 class="img-fluid gallery-image"
+                 alt="Snowy mountains"
+                 onclick="showImage(this.src)">
+        </div>
+
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=700"
+                 class="img-fluid gallery-image"
+                 alt="Open natural landscape"
+                 onclick="showImage(this.src)">
+        </div>
+
+    </div>
+
+</section>
+
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Image Preview</h5>
+
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+                <img id="previewImage" src=""
+                     class="img-fluid rounded"
+                     alt="Selected gallery image">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</main>
+
+<footer class="bg-success text-white text-center p-4">
+    <p>&copy; 2026 Discover Lesotho Tourism.</p>
+    <p>Explore the Mountain Kingdom.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
